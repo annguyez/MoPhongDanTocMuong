@@ -1,0 +1,292 @@
+#VRML V2.0 utf8
+
+
+DEF	gianhang Transform {
+	children [
+		DEF cot Group {children[
+			Transform {
+				translation	-20 5 0
+				children[
+				##### cot
+
+				Shape {appearance DEF cot1 
+					Appearance {
+						material Material {
+							diffuseColor .318 .675 .259
+							specularColor .46 .46 .46
+							ambientIntensity .0933
+							shininess .886
+							transparency .024
+						 }
+						 texture ImageTexture {
+							url	"Images/gaytre.jpg"
+						 }
+					 }
+						 
+						geometry Cylinder { radius 1.5 height 80}
+			}]}
+
+			
+			### chan cot
+						]}
+	
+			Transform { translation 70 0 0
+				children [ USE cot]}
+	
+			Transform { translation 70 0 -70
+				children [ USE cot]}
+
+			Transform { translation 0 0 -70
+				children [ USE cot]}
+
+
+		# mái che 
+					Transform {
+					translation 15 60 -30
+				rotation 0 0 0 -1
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+						
+						}
+						texture	ImageTexture {
+							url	"../Images/rom.jpg"
+						}
+						}
+						geometry Cone {
+						bottomRadius 60 height 30}}]}
+
+		
+					Transform {
+					translation 15 -20 -30 
+					children [Inline {url "thunghang.wrl"}]}
+
+					Transform {
+					translation	10 1 -75
+					scale 7 7 7
+					children [Inline {url "nguoi.wrl"}]}
+			
+			]
+		}
+
+
+
+				
+				
+				
+							Transform	{
+						translation 0 -35 17
+					rotation 0 0 0 0
+					children [
+						Transform {
+							children [
+						Shape {
+							geometry Box {size 200 0 200}
+							appearance Appearance {
+								
+								texture ImageTexture {
+									
+									url "Images\dat.jpg"}
+								}}]}
+
+
+				
+
+
+
+							Transform {
+							translation -70 22 95
+							scale 3.5 3 3.5
+							children [
+								Shape {
+									appearance Appearance {texture ImageTexture {url "Images\logo.jpg"}}
+									geometry Box {size 10 15 .5}}]}]}
+
+
+
+
+
+								###### nguoi mua hang
+
+								Transform {
+				rotation 0 1 0 -1.57
+				scale 8 7 8
+			translation	57 0 -15
+			children [Inline {url "danong.wrl"}
+			]
+		} 
+			Transform {
+				rotation 0 1 0 -1.57
+				scale 8 7 8
+			translation	65 0 15
+			children [Inline {url "nguoi.wrl"}
+			]
+		} 
+
+		   Transform {
+				rotation 0 1 0 -.57
+				scale 8 7 8
+			translation	42 0 45
+			children [Inline {url "nguoi.wrl"}
+			]
+		} 
+
+		Transform {
+				rotation 0 1 0 1
+				scale 8 7 8
+			translation	10 0 50
+			children [Inline {url "danong.wrl"}
+			]
+		} 
+
+
+		Transform {
+				rotation 0 1 0 -1.9
+				scale 8 7 8
+			translation	50 0 80
+			children [Inline {url "danong.wrl"}
+			]
+		}
+	   
+	   
+	   
+	   
+	      Transform {
+				rotation 0 1 0 -.57
+				scale 6 5 6
+			translation	-50 -10 45
+			children [Inline {url "nguoi.wrl"}
+			]
+		} 
+
+	
+
+
+		Transform {
+				rotation 0 1 0 .57
+				scale 6	5 6
+			translation	-70 -10 35
+			children [Inline {url "danong.wrl"}
+			]
+		} 
+	   
+	   
+	    
+
+		 Transform {
+				rotation 0 1 0 -.57
+				scale 3 3 3
+			translation	-50 -27 15
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+		Transform {
+				rotation 0 1 0 -.57
+				scale 3 3 3
+			translation	-70 -27 15
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+		Transform {
+				rotation 0 1 0 -.57
+				scale 3 3 3
+			translation	-70 -14 15
+			children [Inline {url "../hop.wrl"}
+			]
+		}
+	   
+	   Transform {
+				rotation 0 1 0 -.57
+				scale 3 3 3
+			translation	-70 -1 15
+			children [Inline {url "../hop.wrl"}
+			]
+		}
+	  
+	  Transform {
+				scale 3.3 3.3 3.3
+			translation	-63 -25 -10
+			children [Inline {url "../hop.wrl"}
+			]
+		}  
+
+		Transform {
+				scale 3.3 3.3 3.3
+			translation	-63 -10 -10
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+			Transform {
+				scale 3 3 3
+			translation	-63 -27 -30
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+			Transform {
+				scale 3 3 3
+			translation	-63 -27 -50
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+			Transform {
+
+				rotation 0 1 0 .57
+				scale 3 3 3
+			translation	-63 -27 -70
+			children [Inline {url "../hop.wrl"}
+			]
+		}
+	   
+	   Transform {
+
+				rotation 0 1 0 0
+				scale 3 3 3
+			translation	-85 -27 -70
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+	   
+	   Transform {
+
+				rotation 0 1 0 0
+				scale 3 3 3
+			translation	-85 -27 -50
+			children [Inline {url "../hop.wrl"}
+			]
+		}  
+
+		Transform {
+
+				rotation 0 1 0 0
+				scale 3 3 3
+			translation	-85 -27 -70
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+			Transform {
+
+				rotation 0 1 0 0
+				scale 3 3 3
+			translation	-85 -13 -70
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+			Transform {
+
+				rotation 0 1 0 0
+				scale 3 3 3
+			translation	-85 2 -70
+			children [Inline {url "../hop.wrl"}
+			]
+		} 
+
+
+						

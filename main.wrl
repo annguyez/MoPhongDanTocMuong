@@ -1,0 +1,290 @@
+#VRML V2.0 utf8
+
+#tạo màu nền cho khung cảnh
+Viewpoint {
+
+	fieldOfView 0.785398
+
+	position 0 5 40
+
+	orientation 0 0 1 0
+
+	description "Góc nhìn số 1"
+
+	jump FALSE
+
+}
+Viewpoint {
+
+	fieldOfView 0.785398
+
+	position 60 10 30
+
+	orientation 0 1 0 0.78
+
+	description "Góc nhìn số 3"
+
+	jump FALSE
+
+}
+Viewpoint {
+
+	fieldOfView 0.785398
+
+	position 0 60 0
+
+	orientation 1 0 0 -1.57
+
+	description "Góc nhìn số 2"
+
+	jump FALSE
+
+}
+Viewpoint {
+
+	fieldOfView 0.785398
+
+	position -60 5 0
+
+	orientation 0 1 0 -1.57
+
+	description "Góc nhìn số 3"
+
+	jump FALSE
+
+}
+
+DirectionalLight {
+
+	on TRUE
+
+	intensity 1
+
+	ambientIntensity 0
+
+	color 0.5 0.5 0.5
+
+	direction 0 -1 -1
+
+}
+DirectionalLight {
+
+	on TRUE
+
+	intensity 1
+
+	ambientIntensity 0
+
+	color 0.5 0.5 0.5
+
+	direction 0 -1 -1
+
+}
+
+Background	{
+			skyAngle[ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
+            skyColor	[ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
+            groundAngle [ 0.75, 1.4, 1.5, 1.5708 ]
+            groundColor [ .16 .5 0, .16 .5 0, .36 .7 .2, .46 .8 .3, .66 1 0.5 ]
+
+}
+Transform {
+	translation 11.06 -5 -30
+	children [
+		Sound {
+		source AudioClip {
+		url	"Audio/tiengChim.wav"
+		loop TRUE
+			}
+		}
+		Shape {
+			geometry Box {size 115 0.2 110}
+			appearance Appearance {
+				texture	ImageTexture {
+					url	"Images/nenco.jpg"
+				}
+				material Material {
+					ambientIntensity 0
+					shininess 0
+				}
+			}
+		}
+	]
+}
+
+Transform {scale 1 1 1 translation 0 0 -1 children [Inline {url "nhomnui.wrl"}]}
+
+#Transform {scale 1.01 1 1.015 translation 35 13 -20 children [Inline {url "mattroi.wrl"}]}
+
+Transform {scale 0.5 0.5 0.5 translation 0 -3 20 children [Inline {url "cotcong.wrl"}]}
+
+
+Transform {scale 0.5 0.5 0.5 translation 20 -3.5 20 children [Inline {url "hangrao.wrl"}]}
+
+Transform {scale 0.5 0.5 0.5 translation -21 -3.5 20 children [Inline {url "hangrao.wrl"}]}
+
+Transform {scale 0.05 0.05 0.05 translation 25 -3 9 children [Inline {url "gianhang/gianhangqua.wrl"}]} 
+
+Transform {scale 0.6 0.6 0.6 translation 35 -4.8 17 children [Inline {url "gianhang/gianhangbanvai.wrl"}]} 
+
+Transform {scale 0.7 0.7 0.7  translation 18 -4.9 4 children [Inline {url "chodethoc.wrl"}]}
+
+Transform {scale 1 1 1  translation 0 0 0 children [Inline {url "nhomcayTo.wrl"}]}
+
+Transform {scale 1 1 1  translation 0 0 -30 children [Inline {url "nhomcayTo.wrl"}]}
+
+Transform {scale 1 1.4 1  translation 40 1.6 3 children [Inline {url "cayTo.wrl"}]}
+Transform {scale 1 1 1  translation 29 -.5 -2 children [Inline {url "cayTo.wrl"}]}
+
+Transform {scale 1 0.7 1  translation 36 -1.7 -2 children [
+	Sound {
+
+      source AudioClip {
+
+            url   "Audio/tiengChim.wav"
+
+            loop   TRUE
+
+     }
+
+     minFront 40.0
+
+     minBack  40.0
+
+     maxFront 80.0
+
+     maxBack  80.0
+
+     location 19.5 7.0 -30.0
+
+   }
+	Inline {url "cayTo.wrl"}]}
+
+Transform {scale 4.2 4.2 4.2  translation -29 -5 5 children [Inline {url "dongrom.wrl"}]}
+
+
+#Transform {scale 0.7 0.8 0.7 rotation 1 1 1 -2   translation 18 -4.2 8 children [Inline {url "concho.wrl"}]}
+
+Transform {scale 0.7 0.8 0.7   translation 12 -4.2 8 children [Inline {url "cdconcho.wrl"}]}	
+
+
+Transform {scale 0.8 0.8 0.8  translation -25 -4.35 9 children [Inline {url "congadi.wrl"}]}	
+
+Transform {scale 0.5 0.5 .5 rotation 0 1 0 1.7  translation -23 -4.55 7.5 children [
+	
+	Sound {
+		source AudioClip {
+		url	"Audio/tiengGa.wav"
+		loop TRUE
+			}
+	}
+	
+	Inline {url "conga.wrl"}]}
+
+Transform {scale 0.4 0.4 .4 rotation 0 1 0 1.7  translation -23 -4.55 5.5 children [
+	Sound {
+
+      source AudioClip {
+
+            url   "Audio/tiengGa.wav"
+
+            loop   TRUE
+
+     }
+
+     minFront 40.0
+
+     minBack  40.0
+
+     maxFront 80.0
+
+     maxBack  80.0
+
+     location 19.5 7.0 -30.0
+
+   }
+
+	Inline {url "conga.wrl"}]}
+
+Transform {scale 0.3 .3 .3  translation 22 -4.09 7 children [Inline {url "hop.wrl"}]}
+
+Transform {scale 1 1 1  translation 0 0 0 children [Inline {url "nhomcaycola.wrl"}]}
+
+
+#Transform {scale .4 .4 .4  translation -15 0 15.5 children [Inline {url "gianhang/nguoi.wrl"}]}
+
+
+#Transform {scale .4 .4 .4  translation -10 0 10.5 children [Inline {url "gianhang/nguoi.wrl"}]}
+
+
+#Transform {scale .4 .4 .4  translation -13 0 10.5 children [Inline {url "gianhang/nguoi.wrl"}]}
+
+#Transform {scale .4 .4 .4  translation -13 0 10.5 children [Inline {url "gianhang/nguoi.wrl"}]}
+
+Transform {scale 1 2 1 translation 13 4 5.5 children [Inline {url "laco.wrl"}]}
+
+
+Transform {scale 0.8 .7 .8  translation -8.5 -4.9 13.5 children [Inline {url "longduong.wrl"}]}
+
+Transform {scale 0.8 .7 .8  translation 17 -3.1 14.5 children [Inline {url "gianhang/cdnguoi.wrl"}]}
+
+Transform {scale 0.6 .5 .6  translation 18 -3.4 14.5 children [Inline {url "gianhang/cdnguoi.wrl"}]}
+
+Transform {scale 0.6 .5 .6  translation -18 -3.4 13 children [Inline {url "gianhang/cdnguoidicho.wrl"}]}
+
+
+
+Transform {scale 0.3 .3 .3  translation -13 -3.4 4 children [Inline {url "gianhang/divongtron.wrl"}]}
+
+Transform {scale 2 2 2  translation 32 23 -60 children [Inline {url "mattroimoc.wrl"}]}
+
+Transform {scale 1 1 1 translation 0 0 0 children [Inline {url "nhomnguoinemcon.wrl"}]}
+
+Transform {scale 1 1 1 translation 0 0 0 children [Inline {url "nhomnguoicamchieng.wrl"}]}
+
+
+Transform {scale 1 1 1 translation 4 0 0 children [Inline {url "nhomnguoicamchieng.wrl"}]}
+
+Transform {
+	scale 0.4 .4 .4
+    translation 0 -2.95 6
+    children [
+		Inline 
+		{
+			url "gianhang/nguoicamdui.wrl"
+		}
+	]
+}
+
+Transform {scale 0.4 .4 .4  translation 6 -2.95 6 children [Inline {url "gianhang/danongcamdui.wrl"}]}
+
+Transform {scale 0.8 .8 .8  translation 3 -2.3 8 children [Inline {url "danchieng.wrl"}]}
+
+Transform {scale .4 .4 .4 translation 3 -2.95 6 children [Inline {url "gianhang/cddanongdanhchieng.wrl"}]}
+
+Transform {scale 0.2 0.2 0.2  translation 5.8 -4 21 children [Inline {url "cayTo.wrl"}]}
+
+Transform {scale 0.2 0.2 0.2  translation -6.8 -4 21 children [Inline {url "cayTo.wrl"}]}
+
+Transform {scale 0.06 .06 .06  translation 30 -5 -14 children [Inline {url "nhasan.wrl"}]}
+
+Transform {scale 0.05 .05 .05 rotation 0 1 0 -1.5  translation 58 -5 3 children [Inline {url "nhasan.wrl"}]}
+
+Transform {scale 0.05 .05 .05 rotation 0 1 0 -1.5  translation 58 -5 -25 children [Inline {url "nhasan.wrl"}]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+																								
+
+
+

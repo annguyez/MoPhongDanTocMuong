@@ -1,0 +1,20 @@
+#VRML V2.0 utf8
+
+
+DEF	matduong Transform {
+	children [
+		Shape {
+			appearance Appearance {
+			material Material {
+				diffuseColor .35 .16 .12
+				specularColor .21 .11 0
+				ambientIntensity .039
+				shininess .05
+				transparency .184
+			}	
+			
+	}
+	geometry Box {size 60 .2 4}
+}
+	]
+}

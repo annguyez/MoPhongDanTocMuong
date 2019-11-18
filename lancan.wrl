@@ -1,0 +1,74 @@
+#VRML V2.0 utf8
+
+DEF	velancanthang Transform	{
+	children [
+	DEF	thanhngang Transform {
+			rotation 0 0 1 1.57
+			children [
+				Shape {
+					geometry Box {
+						size 0.2 5 0.2
+						
+					}  
+                    appearance  Appearance  { 
+                        
+                      texture ImageTexture {
+                          url "Images/go2.jpg"
+                      }
+                    
+                    
+                    }
+				}
+			]
+		}
+
+		Transform	{
+			translation	0 1 0
+			children USE thanhngang
+		}
+
+
+		DEF	cocdoc Transform {
+			translation	0 0.5 0
+			children [
+				Shape {
+					geometry Box {
+						size 0.15 1.2 0.15
+					}
+				appearance  Appearance  { 
+                        
+                      texture ImageTexture {
+                          url "Images/go1.jpg"
+                      }
+                    
+                    
+                    }
+				}
+			]
+		}
+		Transform	{
+			translation	0.8 0 0
+			children USE cocdoc
+		}	
+		Transform	{
+			translation	1.6 0 0
+			children USE cocdoc
+		}
+		Transform	{
+			translation	2.4 0 0
+			children USE cocdoc
+		}
+		Transform	{
+			translation	-0.8 0 0
+			children USE cocdoc
+		}
+		Transform	{
+			translation	-1.6 0 0
+			children USE cocdoc
+		}
+		Transform	{
+			translation	-2.4 0 0
+			children USE cocdoc
+		}
+	]
+}

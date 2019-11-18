@@ -1,0 +1,159 @@
+#VRML V2.0 utf8
+
+DEF divongtron Transform {
+	children [
+		DEF nguoi Transform	{
+			translation	0 0 -25
+			children [
+				Transform {
+					scale 1 1 1 
+					children [
+						Inline {
+							url	"nguoicamgay.wrl"
+						}
+					]
+				}
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 .875
+			children [
+				USE nguoi
+			]
+		}
+
+		DEF nguoi1 Transform	{
+			translation	0 0 -25
+			children [
+				Transform {
+					scale 1 1 1 
+					children [
+						Inline {
+							url	"danongcamgay.wrl"
+						}
+					]
+				}
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 2.446
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 3.14
+			children [
+				USE nguoi1
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 4.34
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 5.74
+			children [
+				USE nguoi1
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 7.5
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 11
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 -.875
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 -1.571
+			children [
+				USE nguoi1
+			]
+		}
+			
+
+		Transform {
+			rotation 0 1 0 -2.446
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 -3.14
+			children [
+				USE nguoi1
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 -4.34
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 -5.74
+			children [
+				USE nguoi1
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 -7.5
+			children [
+				USE nguoi
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 -11
+			children [
+				USE nguoi
+			]
+		}
+
+
+		
+		DEF	quay TouchSensor {}
+	]
+}
+
+
+DEF	TS TimeSensor {
+	loop TRUE
+	startTime 0
+	stopTime 500
+	cycleInterval 30
+}
+
+DEF	OI OrientationInterpolator {
+	key	[0, .5, 1]
+	keyValue [0 1 0 0, 0 1 0 -3.14156, 0 1 0 -6.28]
+}
+ROUTE quay.touchTime TO	TS.startTime
+ROUTE TS.fraction_changed TO OI.set_fraction
+ROUTE OI.value_changed TO divongtron.rotation

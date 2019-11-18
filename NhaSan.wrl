@@ -1,0 +1,2053 @@
+#VRML V2.0 utf8
+							   
+
+
+#NavigationInfo {
+
+#	avatarSize [1, 4, 1]
+
+#	speed 4
+
+#	type "WALK"
+
+
+#}
+
+#Viewpoint {
+#	position 0 5 0
+#	orientation	1 0 0 0
+#}
+
+		
+
+#nen dat	
+Transform {
+	#scale 1, 0.5, 1
+	children [
+		Shape {
+			appearance Appearance{ 
+				material Material {
+#					diffuseColor 1 1 1
+#					ambientIntensity 0
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				
+				
+			}
+			geometry Box {size 600 1.5 350}
+
+		}
+		Transform {
+			translation	-7.5 3 0
+			children Shape {
+				appearance DEF columnColor Appearance {
+					material Material {			   
+						diffuseColor .51 .17 .06
+						specularColor .53 .53 .53
+						ambientIntensity .06
+						shininess .93
+					}
+					
+				}
+#				geometry Box {size 95 5 65}
+			}
+		}
+	]
+}
+
+#cot TB phai
+
+DEF columns Transform {
+	translation	-120 0 90
+	children [
+		DEF tru Transform {
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .61 .61 .61
+							specularColor .77 .76 .76
+							ambientIntensity .14
+							shininess .9
+						}
+						texture	ImageTexture {
+							url	"Images/go.jpg"
+						}
+
+					}	   
+					geometry Extrusion {
+						crossSection [
+							1.00	0.00
+							0.92	0.38
+							0.71	0.71
+							0.38	0.92
+							0.00	1.00
+							-0.38	0.92
+							-0.71	0.71
+							-0.92	0.38
+							-1.00	0.00
+							-0.92	-0.38
+							-0.71	-0.71
+							-0.38	-0.92
+							0.00	-1.00
+							0.38	-0.92
+							0.71	-0.71
+							0.92	-0.38
+							1.00	0.00
+						]																
+						spine	[0 0 0, 0 5 0]
+    					scale	[3.5 3.5, 3.5 3.5]
+						creaseAngle	1
+						beginCap TRUE
+						endCap TRUE
+						solid FALSE
+					}
+				}
+			]
+		}
+		
+		DEF cot Transform {
+			children [
+				Shape {
+					appearance USE columnColor
+
+					geometry Extrusion {
+						crossSection [
+							1.00	0.00
+							0.92	0.38
+							0.71	0.71
+							0.38	0.92
+							0.00	1.00
+							-0.38	0.92
+							-0.71	0.71
+							-0.92	0.38
+							-1.00	0.00
+							-0.92	-0.38
+							-0.71	-0.71
+							-0.38	-0.92
+							0.00	-1.00
+							0.38	-0.92
+							0.71	-0.71
+							0.92	-0.38
+							1.00	0.00
+						]																
+						spine	[0 0 0, 0 120 0]
+    					scale	[2.5 2.5, 2.5 2.5]
+						creaseAngle	1
+						beginCap TRUE
+						endCap TRUE
+						solid FALSE
+					}
+				}
+			]
+		}
+		
+	]
+}
+
+#cot TB1 phai
+Transform	{
+	translation 48 0 0
+	children USE columns
+}
+
+#cot TB2
+Transform	{
+	translation 96 0 0
+	children USE columns
+}
+
+#cot TB3	  
+Transform	{
+	translation 144 0 0
+	children USE columns
+}
+
+#cot TB4
+Transform	{
+	translation 192 0 0
+	children USE columns
+}
+
+#cot TB5
+Transform	{
+	translation 240 0 0
+	children USE columns
+}
+
+#cot TB6 trai
+Transform	{
+	translation 0 0 -180
+	children USE columns
+}
+
+#cot TB7
+Transform	{
+	translation 48 0 -180
+	children USE columns
+}
+
+#cot TB8
+Transform	{
+	translation 96 0 -180
+	children USE columns
+}
+
+#cot TB9
+Transform	{
+	translation 144 0 -180
+	children USE columns
+}
+
+#cot TB10
+Transform	{
+	translation 192 0 -180
+	children USE columns
+}
+
+#cot TB11
+Transform	{
+	translation 240 0 -180
+	children USE columns
+}
+
+#cot TB12
+Transform	{
+	translation 0 0 -40
+	children USE columns
+}
+
+#cot TB13
+Transform	{
+	translation 0 0 -140
+	children USE columns
+}
+
+#cot TB14
+Transform	{
+	translation 240 0 -40
+	children USE columns
+}
+
+#cot TB15
+Transform	{
+	translation 240 0 -140
+	children USE columns
+}
+
+#main columns
+DEF	columnsHeight Transform	{
+	translation	-72 0 50
+	children [
+		DEF	trucao Transform {children USE tru}
+		DEF	cot1 Transform {
+			children [
+				Shape {
+					appearance USE columnColor
+					
+					geometry Extrusion {
+						
+						crossSection [
+							1.00	0.00
+							0.92	0.38
+							0.71	0.71
+							0.38	0.92
+							0.00	1.00
+							-0.38	0.92
+							-0.71	0.71
+							-0.92	0.38
+							-1.00	0.00
+							-0.92	-0.38
+							-0.71	-0.71
+							-0.38	-0.92
+							0.00	-1.00
+							0.38	-0.92
+							0.71	-0.71
+							0.92	-0.38
+							1.00	0.00
+						]																
+						spine	[0 0 0, 0 145 0]
+    					scale	[2.5 2.5, 2.5 2.5]
+						creaseAngle	1
+						beginCap TRUE
+						endCap TRUE
+						solid FALSE
+					}
+				}
+			]
+		}
+	] 
+	
+}
+
+#cot cao phai
+
+Transform	{
+	children USE columnsHeight
+	translation	48 0 0
+}
+
+Transform	{
+	children USE columnsHeight
+	translation	96 0 0
+}
+
+Transform	{
+	children USE columnsHeight
+	translation	144 0 0
+}
+
+
+#cot cao trai
+
+Transform	{
+	children USE columnsHeight
+	translation	0 0 -100
+}
+
+Transform	{
+	children USE columnsHeight
+	translation	48 0 -100
+}
+
+Transform	{
+	children USE columnsHeight
+	translation	96 0 -100
+}
+
+Transform	{
+	children USE columnsHeight
+	translation	144 0 -100
+}
+
+
+#san nha
+
+DEF	floor Transform	{
+	translation	0 35 0
+	children [
+		Shape {
+			appearance DEF mausannha Appearance {
+				material Material {
+					diffuseColor .5 .3 .19
+					specularColor .08 .08 .05
+					emissiveColor .12 .13 .08
+					ambientIntensity .0833
+					shininess .17
+				}
+				texture	ImageTexture {
+					url	"Images/go.jpg"
+				}
+			}
+
+			geometry Box {size 355 1 280}
+
+		}
+		Transform {
+			children [
+				Shape {
+					appearance USE mausannha
+					geometry Box {size 80 1 180}
+				}
+			]
+			translation	-210 0 -50
+		}
+	]
+}
+
+#tuong nha truoc
+DEF	tuong Transform	{
+	translation	-120 77.5 68
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				texture	ImageTexture {
+					url	"Images/go.jpg"
+				}
+			}
+			geometry Box {size 1.5 85 40}
+		}
+	]
+}
+
+Transform {
+	children USE tuong
+	translation	240 0 0
+}
+
+Transform {
+	children USE tuong
+	translation	0 0 -140
+}
+
+Transform {
+	children USE tuong
+	translation	240 0 -140
+}
+
+Transform {
+	translation	120 77.5 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				texture	ImageTexture {
+							url	"Images/go.jpg"
+						}
+			}
+			geometry Box {size 1.5 85 100}
+		}
+	]
+}
+
+#tuong nha ben phai
+DEF	tuongben Transform {
+	translation	-96 77.5 90
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				texture	ImageTexture {
+					url	"Images/go.jpg"
+				}
+			}
+			geometry Box {size 48 85 1.5}
+		}
+	]
+}
+
+Transform {
+	children USE tuongben
+	translation	96 0 0
+}
+
+Transform {
+	children USE tuongben
+	translation	192 0 0
+}
+
+#tuong ben trai
+Transform {
+	children USE tuongben
+	translation	0 0 -180
+}
+
+Transform {
+	children USE tuongben
+	translation	96 0 -180
+}
+
+Transform {
+	children USE tuongben
+	translation	192 0 -180
+}
+
+##dam
+
+DEF	damdoc Transform {
+	translation	0 120 90
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 240 3 3}
+		}
+	]
+}
+
+Transform {
+	children USE damdoc
+	translation	0 0 -40
+}
+
+Transform {
+	children USE damdoc
+	translation	0 0 -140
+}
+
+Transform {
+	children USE damdoc
+	translation	0 0 -180
+}
+
+DEF damngang Transform {
+	translation	24 120 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 3 3 180}
+		}
+	]
+}
+
+Transform {
+	children USE damngang
+	translation	48 0 0
+}
+
+Transform {
+	children USE damngang
+	translation	96 0 0
+}
+ 
+
+Transform {
+	children USE damngang
+	translation	-48 0 0
+}
+
+Transform {
+	children USE damngang
+	translation	-96 0 0
+}
+
+Transform {
+	children USE damngang
+	translation	-144 0 0
+}
+
+#keo  
+
+DEF	keodai Transform {
+	translation	0 143 50
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 146 4.5 4.5}
+		}
+	]
+}
+
+Transform {
+	children USE keodai
+	translation	0 0 -100
+}
+
+DEF	keongan	Transform {
+	translation	-120 118 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 4.5 4.5 100}
+		}
+	]
+}
+
+Transform {
+	children USE keongan
+	translation	48 25 0
+}
+
+Transform {
+	children USE keongan
+	translation	96 25 0
+}
+
+Transform {
+	children USE keongan
+	translation	144 25 0
+}
+
+Transform {
+	children USE keongan
+	translation	192 25 0
+}
+
+##gac mai
+
+DEF	gacmai Transform {
+	translation	24 140 -60
+	rotation 1 0 0 1
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 3 145 3}
+		}
+	]
+}
+
+Transform {
+	children USE gacmai
+	translation	48 0 0 
+}
+
+Transform {
+	children USE gacmai
+	translation	-48 0 0 
+}
+
+Transform {
+	children USE gacmai
+	translation	-96 0 0 
+}
+
+#gac mai ben phai
+
+DEF gacmai2 Transform {
+	translation	24 140 60
+	rotation 1 0 0 -1
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 3 145 3}
+		}
+	]
+}
+
+Transform {
+	children USE gacmai2
+	translation	48 0 0 
+}
+
+Transform {
+	children USE gacmai2
+	translation	-48 0 0 
+}
+
+Transform {
+	children USE gacmai2
+	translation	-96 0 0 
+}
+
+DEF	gacmainho1 Transform {
+	translation	-117 122 50
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 100 3 3}
+		}
+	]
+	rotation 0 0 1 0.47
+}
+
+Transform {
+	children USE gacmainho1
+	translation	0 0 -100
+}
+
+DEF	gacmainho2 Transform {
+	translation	117 122 50
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 100 3 3}
+		}
+	]
+	rotation 0 0 1 -0.47
+}
+
+Transform {
+	children USE gacmainho2
+	translation	0 0 -100
+}
+
+DEF	gacmainho3 Transform {
+	translation	24 152 24
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 3 22 3}
+		}
+	]
+}
+
+Transform {
+	children USE gacmainho3
+	translation	48 0 0
+}
+
+Transform {
+	children USE gacmainho3
+	translation	-48 0 0
+}
+
+Transform {
+	children USE gacmainho3
+	translation	 -96 0 0
+}
+
+Transform {
+	children USE gacmainho3
+	translation	0 0 -48
+}
+
+Transform {
+	children USE gacmainho3
+	translation	48 0 -48
+}
+
+Transform {
+	children USE gacmainho3
+	translation	-48 0 -48
+}
+
+Transform {
+	children USE gacmainho3
+	translation	 -96 0 -48
+}
+
+##gac mai ngang
+DEF	gacmaingang Transform {
+	translation	24 161 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 3 3 50}
+		}
+	]
+}
+
+Transform {
+	children USE gacmaingang
+	translation	48 0 0
+}
+
+Transform {
+	children USE gacmaingang
+	translation	-48 0 0
+}
+
+Transform {
+	children USE gacmaingang
+	translation	-96 0 0
+}
+
+
+##thanh nep
+DEF	thanhnep Transform {
+	translation	0 175 9
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 160 1 1}
+		}
+	]
+}
+
+
+Transform {
+	children USE thanhnep
+	translation	0 -10 15
+}
+
+Transform {
+	children USE thanhnep
+	translation	0 -20 30
+}
+
+Transform {
+	children USE thanhnep
+	translation	0 0 -18
+}
+
+Transform {
+	children USE thanhnep
+	translation	0 -10 -33
+}
+
+Transform {
+	children USE thanhnep
+	translation	0 -20 -48
+}
+
+DEF	thanhnepdai1 Transform {
+	translation	0 137 68
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 182 1 1}
+		}
+	]
+}
+
+Transform {
+	translation	0 0 -136
+	children USE thanhnepdai1
+}
+
+DEF	thanhnepngang1 Transform {
+	translation	91 137 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 137}
+		}
+	]
+}
+
+Transform {
+	children USE thanhnepngang1
+	translation	-182 0 0
+}
+
+DEF thanhnepdai2 Transform {
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 221 1 1}
+		}
+	]
+	translation	0 127.5 83	   
+}
+
+Transform {
+	children USE thanhnepdai2
+	translation	0 0 -166
+}
+
+DEF thanhnepngang2 Transform {
+	children [
+		 Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 165}
+		}
+	]	
+	translation	110 127.5 0
+}
+
+Transform {
+	children USE thanhnepngang2
+	translation	-220 0 0
+}
+
+DEF	thanhnepdai3 Transform {
+	children [
+		  Shape {
+			appearance USE columnColor
+			geometry Box {size 260 1 1}
+		}
+	]
+	translation	0 116.5 100
+}
+
+Transform {
+	children USE thanhnepdai3
+	translation	0 0 -200
+}
+
+DEF	thanhnepngang3 Transform {
+	children [
+		 Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 200}
+		}
+	]
+	translation	130 116.5 0
+}
+
+Transform {
+	children USE thanhnepngang3
+	translation	-260 0 0
+}
+
+DEF	thanhnepdai4 Transform {
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 316 1 1}
+		}
+	]
+	translation	0 103.5 120
+}
+
+Transform {
+	children USE thanhnepdai4
+	translation	0 0 -240
+}
+
+DEF	thanhnepngang4 Transform {
+	children [
+		 Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 240}
+		}
+	]
+	translation	157.5 103.5 0
+}
+
+Transform {
+	children USE thanhnepngang4
+	translation	-315 0 0
+}
+
+#nep doc
+
+DEF	thanhnepdoc1 Transform {
+	translation	0 143 60
+	rotation 1 0 0 -1
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 144 1}
+		}
+	]
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	-16 0 0
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	-32 0 0
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	-48 0 0
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	-64 0 0
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	16 0 0
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	32 0 0
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	48 0 0
+}
+
+Transform {
+	children USE thanhnepdoc1
+	translation	64 0 0
+}
+
+
+DEF	thanhnepdoc2 Transform {   
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 144 1}
+		}
+	]  
+	translation	16 143 -60
+	rotation 1 0 0 1   
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	-16 0 0
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	-32 0 0
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	-48 0 0
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	-64 0 0
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	16 0 0
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	32 0 0
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	48 0 0
+}
+
+Transform {
+	children USE thanhnepdoc2
+	translation	-80 0 0
+}
+
+DEF	thanhnepngan1 Transform	{
+	translation	-120 123.5 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 100 1 1}
+		}
+	]
+	rotation 0 0 1 0.47  
+}
+
+Transform {
+	translation	0 0 16
+	children USE thanhnepngan1
+}
+
+Transform {
+	translation	0 0 32
+	children USE thanhnepngan1
+}
+
+Transform {
+	translation	0 0 48
+	children USE thanhnepngan1
+}
+
+Transform {
+	translation	0 0 -16
+	children USE thanhnepngan1
+}
+
+Transform {
+	translation	0 0 -32
+	children USE thanhnepngan1
+}
+
+Transform {
+	translation	0 0 -48
+	children USE thanhnepngan1
+}
+
+DEF	thanhnepngan2 Transform	{
+	translation	120 123.5 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 100 1 1}
+		}
+	]
+	rotation 0 0 1 -0.47  
+}
+
+Transform {
+	translation	0 0 16
+	children USE thanhnepngan2
+}
+
+Transform {
+	translation	0 0 32
+	children USE thanhnepngan2
+}
+
+Transform {
+	translation	0 0 48
+	children USE thanhnepngan2
+}
+
+Transform {
+	translation	0 0 -16
+	children USE thanhnepngan2
+}
+
+Transform {
+	translation	0 0 -32
+	children USE thanhnepngan2
+}
+
+Transform {
+	translation	0 0 -48
+	children USE thanhnepngan2
+}
+
+DEF	thanhnepngan3 Transform	{
+	translation	-128 119 68
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 82 1 1}
+		}
+	]
+	rotation 0 0 1 0.47  
+}
+
+Transform {
+	translation	0 0 -136
+	children USE thanhnepngan3
+}
+
+DEF	thanhnepngan4 Transform	{
+	translation	128 119 68
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 82 1 1}
+		}
+	]
+	rotation 0 0 1 -0.47  
+}
+
+Transform {
+	translation	0 0 -136
+	children USE thanhnepngan4
+}
+
+DEF	thanhnepngan5 Transform	{
+	translation	-137 115 83
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 62 1 1}
+		}
+	]
+	rotation 0 0 1 0.47
+}
+
+Transform {
+	children USE thanhnepngan5
+	translation	0 0 -166
+}
+
+
+DEF	thanhnepngan6 Transform	{
+	translation	137 115 83
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 62 1 1}
+		}
+	]
+	rotation 0 0 1 -0.47
+}
+
+Transform {
+	children USE thanhnepngan6
+	translation	0 0 -166
+}
+
+
+DEF	thanhnepngan7 Transform	{
+	translation	-147 109.5 99
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 39 1 1}
+		}
+	]
+	rotation 0 0 1 0.44
+}
+
+Transform {
+	children USE thanhnepngan7
+	translation	0 0 -198
+}
+
+DEF	thanhnepngan8 Transform	{
+	translation	147 109.5 99
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 39 1 1}
+		}
+	]
+	rotation 0 0 1 -0.44
+}
+
+Transform {
+	children USE thanhnepngan8
+	translation	0 0 -198
+}
+
+DEF	thanhnepngan9 Transform	{
+	translation	130 110 111
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 28}
+		}
+	]
+	rotation 1 0 0 0.57
+}
+
+Transform {
+	children USE thanhnepngan9
+	translation	-260 0 0
+}
+
+DEF	thanhnepngan10 Transform	{
+	translation	130 110 -111
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 28}
+		}
+	]
+	rotation 1 0 0 -0.57
+}
+
+Transform {
+	children USE thanhnepngan10
+	translation	-260 0 0
+}
+
+DEF	thanhnepngan11 Transform	{
+	translation	110 115.5 -103
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 48}
+		}
+	]
+	rotation 1 0 0 -0.57
+}
+
+Transform {
+	children USE thanhnepngan11
+	translation	-220 0 0
+}
+
+DEF	thanhnepngan12 Transform	{
+	translation	110 115.5 103
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 48}
+		}
+	]
+	rotation 1 0 0 0.57
+}
+
+Transform {
+	children USE thanhnepngan12
+	translation	-220 0 0
+}
+
+DEF	thanhnepngan13 Transform	{
+	translation	91 120 96
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 65}
+		}
+	]
+	rotation 1 0 0 0.57
+}
+
+Transform {
+	children USE thanhnepngan13
+	translation	-182 0 0
+}
+
+DEF	thanhnepngan14 Transform	{
+	translation	91 120 -96
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 1 1 65}
+		}
+	]
+	rotation 1 0 0 -0.57
+}
+
+Transform {
+	children USE thanhnepngan14
+	translation	-182 0 0
+}
+##mai nha
+
+DEF	mainha1 Transform {
+	translation	0 143.5 62
+	rotation 1 0 0 -1
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 150 148 1.5}
+		}
+	]
+}
+
+DEF	mainha2 Transform {
+	translation	0 143.5 -62
+	rotation 1 0 0 1
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 150 148 1.5}
+		}
+	]
+}
+
+DEF	mainha3	Transform {
+	translation	-120 125 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 102 1.5 110}
+		}
+	]
+	rotation 0 0 1 0.46
+}
+
+DEF	mainha4	Transform {
+	translation	120 125 0
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 102 1.5 110}
+		}
+	]
+	rotation 0 0 1 -0.46
+}
+
+#cua so
+
+DEF	tuongduoicua Transform {
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 48 3 3}
+		}
+	]
+	translation	48 50 90
+}
+
+Transform {
+	children USE tuongduoicua 
+	translation	-96 0 0
+}
+
+Transform {
+	children USE tuongduoicua 
+	translation	0 0 -180
+}
+
+Transform {
+	children USE tuongduoicua 
+	translation	-96 0 -180
+}
+
+Transform {
+	children USE tuongduoicua 
+	translation	0 50 0
+}
+Transform {
+	children USE tuongduoicua 
+	translation	-96 50 0
+}
+Transform {
+	children USE tuongduoicua 
+	translation	0 50 -180
+}
+Transform {
+	children USE tuongduoicua 
+	translation	-96 50 -180
+}
+
+
+DEF	tuongcuaso Transform {
+	translation	45 40 90
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+								 
+			}
+			geometry Box {size 50 18 1.5}
+		}
+	]
+}
+
+Transform {
+	translation	48 0 0
+	children USE tuongcuaso
+}
+
+Transform {
+	translation	-96 0 0
+	children USE tuongcuaso
+}
+
+Transform {
+	translation	0 0 -180
+	children USE tuongcuaso
+}
+
+Transform {
+	translation	-96 0 -180
+	children USE tuongcuaso
+}
+
+Transform {
+	translation	0 70 0
+	children USE tuongcuaso
+}
+
+Transform {
+	translation	-96 70 0
+	children USE tuongcuaso
+}
+
+Transform {
+	translation	0 70 -180
+	children USE tuongcuaso
+}
+
+Transform {
+	translation	-96 70 -180
+	children USE tuongcuaso
+}
+
+####lan can
+DEF	lancan Transform {
+	translation	-175 50 138
+	children [
+		Shape {
+			appearance DEF maulc Appearance {
+				material Material {
+					diffuseColor .8 .384 .0902
+					specularColor .92 .43 .01
+					ambientIntensity .117
+					shininess .4
+				}
+				texture	ImageTexture {
+					url	"Images/go.jpg"
+				}
+			}
+			geometry Box {size 3 35 3}
+		}
+		Transform {
+			translation	0 19 0
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Sphere {radius 2.0}   
+				}
+			]
+		}
+
+	]
+}
+
+Transform {
+	children USE lancan
+	translation	50 0 0
+}
+
+Transform {
+	children USE lancan
+	translation	100 0 0
+}
+
+Transform {
+	children USE lancan
+	translation	150 0 0
+}
+
+Transform {
+	children USE lancan
+	translation	200 0 0
+}
+
+Transform {
+	children USE lancan
+	translation	250 0 0
+}
+
+Transform {		
+	children USE lancan
+	translation	300 0 0
+}
+
+Transform {		
+	children USE lancan
+	translation	350 0 0
+}
+
+#lan can trai
+Transform {
+	children USE lancan
+	translation	0 0 -277
+}
+
+Transform {
+	children USE lancan
+	translation	50 0 -277
+}
+
+Transform {
+	children USE lancan
+	translation	100 0 -277
+}
+
+Transform {
+	children USE lancan
+	translation	150 0 -277
+}
+
+Transform {
+	children USE lancan
+	translation	200 0 -277
+}
+
+Transform {
+	children USE lancan
+	translation	250 0 -277
+}
+
+Transform {		
+	children USE lancan
+	translation	300 0 -277
+}
+
+Transform {		
+	children USE lancan
+	translation	350 0 -277
+}
+
+Transform {
+	children USE lancan
+	translation	-50 0 -277
+}
+
+#lan can sau
+Transform {
+	translation	-50 0 -237
+	children USE lancan
+}
+Transform {
+	translation	-50 0 -197
+	children USE lancan
+}
+Transform {
+	translation	-50 0 -157
+	children USE lancan
+}
+Transform {
+	translation	-50 0 -117
+	children USE lancan
+}
+Transform {		
+	children USE lancan
+	translation	350 0 -237
+}
+
+Transform {		
+	children USE lancan
+	translation	350 0 -197
+}
+
+Transform {		
+	children USE lancan
+	translation	350 0 -157
+}
+
+Transform {		
+	children USE lancan
+	translation	350 0 -117
+}
+
+Transform {		
+	children USE lancan
+	translation	350 0 -77
+}
+
+Transform {		
+	children USE lancan
+	translation	350 0 -37
+}
+		
+DEF	lcngang Transform {
+	translation	0 65 138
+	children [
+		Shape {
+			appearance USE maulc
+			geometry Box {size 355 1.5 1.5}
+		}
+	]
+}
+	
+
+Transform {
+	children USE lcngang
+	translation	0 0 -277
+}
+
+Transform {
+	translation	175 65 0
+	children [
+		Shape {
+			appearance USE maulc
+			geometry Box {size 1.5 1.5 280}
+		}
+	]
+}
+
+DEF	hoatietlc Transform	{
+	children [
+		DEF cotnho1 Transform {
+			translation	0 60 138
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 40 1 1}
+				}
+			]
+		}
+		DEF cotnho2 Transform {
+			translation	-20 50 138
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 30 1}
+				}
+			]
+		}
+		Transform {
+			children USE cotnho1
+			translation	0 -12 0
+		}
+		Transform {
+			children USE cotnho2
+			translation	40 0 0
+		}
+
+		DEF	thanhngang1 Transform {
+			translation	0 55 138
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 30 1 1}
+				}
+				
+			]
+		}
+		Transform {
+			translation	0 -15 0
+			children USE thanhngang1
+		}
+
+		DEF	cottn1 Transform {
+			translation	-15 57 138
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 5 1}
+				}
+			]
+		}
+
+		Transform {
+			children USE cottn1
+			translation	30 0 0
+		}
+
+		Transform {
+			children USE cottn1
+			translation	0 -19 0
+		}
+
+		Transform {
+			children USE cottn1
+			translation	30 -19 0
+		}
+		Transform {
+			translation	0 48 138
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 15 1}
+				}
+			]
+		}
+		
+		Transform  {
+			translation	0 48 138
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 5.5 5.5 1}
+				}
+			]
+			rotation 0 0 1 0.75
+		}
+	]
+}
+
+Transform {
+	children USE hoatietlc
+	translation	50 0 0
+}
+
+Transform {
+	children USE hoatietlc
+	translation	100 0 0
+}
+
+Transform {
+	children USE hoatietlc
+	translation	150 0 0
+}
+
+Transform {
+	children USE hoatietlc
+	translation	-50 0 0
+}
+
+Transform {
+	children USE hoatietlc
+	translation	-100 0 0
+}
+
+Transform {
+	children USE hoatietlc
+	translation	-150 0 0
+}
+
+#hoa tiet lan can trai
+
+Transform {
+	children USE hoatietlc
+	translation	0 0 -277
+}
+
+Transform {
+	children USE hoatietlc
+	translation	50 0 -277
+}
+
+Transform {
+	children USE hoatietlc
+	translation	100 0 -277
+}
+
+Transform {
+	children USE hoatietlc
+	translation	150 0 -277
+}
+
+Transform {
+	children USE hoatietlc
+	translation	-50 0 -277
+}
+
+Transform {
+	children USE hoatietlc
+	translation	-100 0 -277
+}
+
+Transform {
+	children USE hoatietlc
+	translation	-150 0 -277
+}
+Transform {
+	children USE hoatietlc
+	translation	-200 0 -277
+}			   
+
+Transform {
+	translation	-200 65 -139
+	children [
+		Shape {
+			appearance USE maulc
+			geometry Box {size 51 1.5 1.5 }
+		}
+	]
+}
+
+DEF lcplus Transform {
+	translation	-225 65 -120
+	children [
+		Shape {
+			appearance USE maulc
+			geometry Box {size 1.5 1.5 41}
+		}
+	]
+}
+
+Transform {
+	children USE lcplus
+	translation	0 0 40
+}
+
+Transform {
+	children USE lcplus
+	translation	0 0 80
+}
+
+Transform {
+	children USE lcplus
+	translation	0 0 120
+}
+
+DEF	hoatietlcsau Transform	{
+	children [
+		DEF cotnho3 Transform {
+			translation	175 60 1
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 1 30}
+				}
+			]
+		}
+		DEF cotnho4 Transform {
+			translation	175 50 -14
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 30 1}
+				}
+			]
+		}
+		Transform {
+			children USE cotnho3
+			translation	0 -12 0
+		}
+		Transform {
+			children USE cotnho4
+			translation	0 0 30		
+		}
+
+		DEF	thanhngang2 Transform {
+			translation	175 55 1
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 1 21}
+				}
+				
+			]
+		}
+		Transform {
+			translation	0 -15 0
+			children USE thanhngang2
+		}
+
+		DEF	cottn2 Transform {
+			translation	175 57 -10
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 5 1}
+				}
+			]
+		}
+
+		Transform {
+			children USE cottn2
+			translation	0 0 21
+		}
+
+		Transform {
+			children USE cottn2
+			translation	0 -19 0
+		}
+
+		Transform {
+			children USE cottn2
+			translation	0 -19 21
+		}
+		Transform {
+			translation	175 47 1
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 15 1}
+				}
+			]
+		}
+		Transform  {
+			translation	175 48 1
+			children [
+				Shape {
+					appearance USE maulc
+					geometry Box {size 1 5.5 5.5}
+
+				}
+			]
+			rotation 1 0 0 0.75
+		}
+						   
+
+	]
+}
+
+Transform {
+	children USE hoatietlcsau
+	translation	0 0 40
+}
+
+Transform {
+	children USE hoatietlcsau
+	translation	0 0 80
+}
+
+Transform {
+	children USE hoatietlcsau
+	translation	0 0 120
+}
+   
+Transform {
+	children USE hoatietlcsau
+	translation	0 0 -40
+}
+
+Transform {
+	children USE hoatietlcsau
+	translation	0 0 -80
+}
+
+Transform {
+	children USE hoatietlcsau
+	translation	0 0 -120
+}
+
+Transform {
+	children USE hoatietlcsau
+	translation	-400 0 -120
+}
+
+Transform {
+	children USE hoatietlcsau
+	translation	-400 0 -80
+}
+Transform {
+	children USE hoatietlcsau
+	translation	-400 0 -40
+}
+Transform {
+	children USE hoatietlcsau
+	translation	-400 0 0
+}
+
+#cau thang
+
+DEF	cauthang Transform {
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 2 50 5}
+		}
+	]
+	translation	-180 20 60
+	rotation 1 0 0 -0.8
+}
+
+Transform {
+	children USE cauthang
+	translation	-40 0 0
+}
+
+DEF	baccauthang Transform {
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Box {size 40 1 6}
+		}
+	]
+	translation	-200 5 75
+}
+
+Transform {
+	children USE baccauthang
+	translation	0 6 -5
+}
+
+Transform {
+	children USE baccauthang
+	translation	0 12 -12
+}
+
+Transform {
+	children USE baccauthang
+	translation	0 18 -18
+}
+
+Transform {
+	children USE baccauthang
+	translation	0 24 -24
+}
+
+Transform {
+	children USE baccauthang
+	translation	0 30 -30
+}
+
+
+#tamgiac
+DEF	maitamgiac1 Transform {
+	children [
+		Shape {
+			appearance USE columnColor
+			geometry Extrusion {
+				crossSection [
+					140 90
+					45 90
+					45 00
+					140 90
+				]
+				spine [0 0 0,0 1.5 0 ]  
+				scale [ 1 1, 1 1 ]									   
+				creaseAngle	1
+				beginCap TRUE
+				endCap TRUE
+				solid FALSE
+			}
+		}
+	]
+	translation	30 150 40
+	rotation 1 0 0 0.48
+}
+Transform {scale 9 15 15  translation -48 52 90 children [Inline {url "lancan.wrl"}]}
+
+Transform {scale 9 15 15  translation 48 52 90 children [Inline {url "lancan.wrl"}]}
+
+Transform {scale 9 15 15  translation 48 52 -90 children [Inline {url "lancan.wrl"}]}
+
+Transform {scale 9 15 15  translation -48 52 -90 children [Inline {url "lancan.wrl"}]}
+
+Transform {scale 19 19 19 rotation 0 1 0 -1.57 translation 100 42 0 children [Inline {url "caiban.wrl"}]}
+
+
+Transform {scale 10 10 10 rotation 0 0 1 1.57 translation 120 90 5 children [Inline {url "Linh/chieng.wrl"}]}
+
+Transform {scale 10 10 10 rotation 0 0 1 1.57 translation 120 90 30 children [Inline {url "Linh/chieng.wrl"}]}
+
+Transform {scale 10 10 10 rotation 0 0 1 1.57 translation 120 90 -25 children [Inline {url "Linh/chieng.wrl"}]}
+
+Transform {scale 5 5 5 rotation 0 1 0 -1.57 translation 80 60 30 children [Inline {url "gianhang/nguoi.wrl"}]}
+
+Transform {scale 5 5 5 rotation 0 1 0 -1.57 translation 80 60 -30 children [Inline {url "gianhang/nguoi.wrl"}]}
+
+Transform {scale 5 5 5 rotation 0 1 0 -1.57 translation 50 60 -30 children [Inline {url "gianhang/danong.wrl"}]}
+
+Transform {scale 5 5 5 rotation 0 1 0 -1.57 translation 50 60 30 children [Inline {url "gianhang/danong.wrl"}]}
+
+#Transform {scale 13 13 13 rotation 0 1 0 -1.57 translation 120 125 5 children [Inline {url "gianhang/vai1.wrl"}]}
+
+
+
+
+
+
+

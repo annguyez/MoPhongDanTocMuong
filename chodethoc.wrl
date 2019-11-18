@@ -1,0 +1,46 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Shape {appearance Appearance {material Material {}
+		texture ImageTexture {url "Images/go.jpg"}}
+			geometry Box {size 7.5 0.5 5}}
+	]
+}
+
+DEF	khoi Transform {
+	children [
+		DEF	trong Transform {
+			children [
+			DEF	thoc Transform {
+				translation	0 0.5 0
+				children [Inline {url "baothoc.wrl"}]
+			}
+			DEF	gao Transform {
+				translation	0 0.5 0
+				children [Inline {url "baogao.wrl"}]
+			}
+			Transform {
+				translation	0 0.5 0
+				children [USE thoc ]
+			}				 
+			Transform {
+				translation	0 1.5 0
+				children [USE gao ]
+			}
+			
+
+		]
+	}
+	Transform {
+		translation	-4 0 -1
+		children [USE trong ]
+	}
+	Transform {
+		translation	0 0 2
+		children [USE trong ]
+	}
+	
+	
+]
+}

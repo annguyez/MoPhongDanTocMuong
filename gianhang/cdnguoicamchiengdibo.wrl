@@ -1,0 +1,38 @@
+#VRML V2.0 utf8
+
+PROTO Nguoi[
+	field SFTime nguoiSpeed 10,
+]
+{
+	DEF	nguoicamchieng Transform {
+		children [
+			Inline {url "nguoicamchieng.wrl"}
+			
+		
+		  
+		    	]
+	}
+
+			DEF	tgian TimeSensor {
+				cycleInterval IS nguoiSpeed
+				loop TRUE
+			}
+
+			DEF	huongdi PositionInterpolator {
+				key	[
+					0.0,0.2,0.4,0.6,0.8,
+				]
+				keyValue [
+					0 0 -50, 2 0 -40, 4 0 -30, 6 0 -20, 8 0 0
+
+				]
+			}
+			ROUTE tgian.fraction_changed  TO huongdi.set_fraction
+			ROUTE huongdi.value_changed	TO nguoicamchieng.set_translation
+}	
+
+Transform {
+	children [
+		Nguoi {}
+	]
+}

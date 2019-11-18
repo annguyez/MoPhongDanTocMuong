@@ -1,0 +1,10 @@
+#VRML V2.0 utf8
+
+Transform {scale 4.01 6 4.015 translation -10 -5 -50 children [Inline {url "nui.wrl"}]}
+Transform {scale 2.01 2 2.015 translation 45 -5 -55 children [Inline {url "nui.wrl"}]}
+
+Transform {scale 3.01 3 3.015 translation 30 -5 -70 children [Inline {url "nui.wrl"}]}
+
+Transform {scale 2.01 2 2.015 translation 20 -5 -70 children [Inline {url "nui.wrl"}]}
+
+Transform {scale 2.51 2.5 2.515 translation -20 -5 -70 children [Inline {url "nui.wrl"}]}

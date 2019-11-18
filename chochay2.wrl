@@ -1,0 +1,27 @@
+#VRML V2.0 utf8
+	DEF	chochay Transform {
+		scale 1 1 1
+		rotation 1 1 1 -2
+		children [
+			Inline {url "concho.wrl"}
+			
+			  DEF	cham TouchSensor {}
+		  
+		    	]
+	}
+
+DEF	TS TimeSensor {
+	loop TRUE
+	startTime 0
+	stopTime 1000
+	cycleInterval 10
+}
+
+DEF	OI OrientationInterpolator {
+	key	[0, .5, 1]
+	keyValue [0 1 0 0, 0 1 0 -3.14156, 0 1 0 -6.28]
+}
+
+ROUTE cham.touchTime TO	TS.startTime
+ROUTE TS.fraction_changed TO OI.set_fraction
+ROUTE OI.value_changed TO chochay.rotation 

@@ -1,0 +1,39 @@
+#VRML V2.0 utf8
+
+PROTO Conga[
+	field SFTime nguoiSpeed 20,
+]
+{
+	DEF	gadibo Transform {
+		scale .8 .8 .8
+		children [
+			Inline {url "conga.wrl"}
+			
+		
+		  
+		    	]
+	}
+
+			DEF	tgian TimeSensor {
+				cycleInterval IS nguoiSpeed
+				loop TRUE
+			}
+
+			DEF	huongdi PositionInterpolator {
+				key	[
+					0.0,0.2,0.4,0.6,0.8,
+				]
+				keyValue [
+					1 0 0, -2 0 0, -3 0 0, -5 0 0, -6 0 0
+
+				]
+			}
+			ROUTE tgian.fraction_changed  TO huongdi.set_fraction
+			ROUTE huongdi.value_changed	TO gadibo.set_translation
+}	
+
+Transform {
+	children [
+		Conga {}
+	]
+}

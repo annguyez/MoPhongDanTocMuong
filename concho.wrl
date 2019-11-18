@@ -1,0 +1,201 @@
+#VRML V2.0 utf8
+Group {
+	children [
+		##Than Cho
+		DEF Than Transform {
+			children[
+				Transform {
+					children [
+				Shape {
+					geometry Cylinder{height 1 radius .5}
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+							specularColor .87 .25 .25
+							ambientIntensity .157
+							shininess 1
+						}
+					}
+
+				}
+			]
+		}
+		##cho no tron duoi
+		DEF tron Transform {
+			translation	0 .5 0
+			children [
+				Shape {
+					geometry Sphere {radius .5}
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0 -1 0
+			children [
+				USE	tron
+			]
+		}
+		]
+	}
+		
+		
+		###Co Cho
+		Transform {
+			translation	0 .9 .4
+			rotation 1 0 0 .785
+			children [
+				Shape {
+					geometry Cylinder	{height 1 radius .1}
+					appearance Appearance {
+					material Material {
+							diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+						}	
+					}
+				}
+			]
+		}
+		### Dau Cho
+		Transform	{
+			translation	0 1.3 .4
+			rotation 1 0 0 -.785
+			scale .6 .6 .6
+			children [
+				USE	Than
+			]
+		}
+			##mat  1 
+		Transform {
+			 translation	.3 1.3 .5
+			children [
+				Shape {
+					geometry Sphere	{radius .05}
+					appearance Appearance {
+					material Material {
+						diffuseColor 0 0 0
+						specularColor .29 .3 .29
+						ambientIntensity 0
+						shininess .08
+						}	
+					}
+				}
+			]
+		}
+		##mat 2
+			Transform {
+			 translation	-.3 1.3 .5
+			children [
+				Shape {
+					geometry Sphere	{radius .05}
+					appearance Appearance {
+					material Material {
+						diffuseColor 0 0 0
+						specularColor .29 .3 .29
+						ambientIntensity 0
+						shininess .08
+						}	
+					}
+				}
+			]
+		}
+	  
+		###Chan Cho
+			Transform {
+			translation	-.3 -.8 -.4
+			rotation 1 0 0 .785
+			children [
+				Shape {
+					geometry Cylinder {height 1 radius .15}
+					appearance Appearance {
+					material Material {
+							diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	.3 -.8 -.4
+			rotation 1 0 0 .785
+			children [
+				Shape {
+					geometry Cylinder {height 1 radius .15}
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	.3 .7 -.4
+			rotation 1 0 0 -.785
+			children [
+				Shape {
+					geometry Cylinder {height 1 radius .15}
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-.3 .7 -.4
+			rotation 1 0 0 -.785
+			children [
+				Shape {
+					geometry Cylinder {height 1 radius .15}
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+						}
+					}
+				}
+			]
+		}
+		##Duoi Cho
+			Transform {
+			translation	0 -.9 .4
+			rotation 1 0 0 -.785
+			scale .4 1 .4
+			children [
+				Shape {
+					geometry Sphere	{ radius .4}
+					appearance Appearance {
+					material Material {
+						diffuseColor 1 .85 0
+						specularColor .87 .25 .25
+						ambientIntensity .157
+						shininess 1
+						}
+					}
+				}
+			]
+		}
+]
+}

@@ -1,0 +1,421 @@
+#VRML V2.0 utf8
+
+DEF	thanh_rao Transform {
+	translation	0 -1 0
+	scale 1 2 1
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				texture ImageTexture {
+    				  url "Images/go.jpg"
+    				 }
+			}
+			geometry Box {
+				size 0.1 2 0.1
+			}
+		}
+	]
+}
+#am
+Transform {
+	translation	-0.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-1.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-2.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-3.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-4.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-5.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-6.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-7.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-8.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-9.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-10.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-11.2 0 0
+	children [USE thanh_rao ]
+}
+
+
+
+
+Transform {
+	translation	-12 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-12.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-13.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-14.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-15 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-15.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-16.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-17.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-18 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-18.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-19.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-20.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-21.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-22 0 0
+	children [USE thanh_rao ]
+}
+
+
+
+Transform {
+	translation	-22.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-23.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-24.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-25 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-25.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-26.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-27.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-28 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	-28.8 0 0
+	children [USE thanh_rao ]
+}
+
+
+
+
+# duong
+Transform {
+	translation	0.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	1.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	2.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	3.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	4.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	5.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	6.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	7.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	8.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	9.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	10.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	11.2 0 0
+	children [USE thanh_rao ]
+}
+
+
+
+
+
+
+
+Transform {
+	translation	12 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation 12.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	13.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	14.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	15 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	15.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	16.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	17.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	18 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	18.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	19.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	20.4 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	21.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	22 0 0
+	children [USE thanh_rao ]
+}
+
+
+
+
+
+
+
+Transform {
+	translation	22.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	23.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	24.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	25 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	25.8 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	26.6 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	27.2 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	28 0 0
+	children [USE thanh_rao ]
+}
+Transform {
+	translation	28.8 0 0
+	children [USE thanh_rao ]
+}
+
+
+
+
+
+
+
+
+# thanh ngang
+DEF	thanh_ngang_tren1 Transform {
+	translation	0 0.7 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				texture ImageTexture {
+    				  url "Images/go.jpg"
+    				 }
+			}
+			geometry Box {
+				size 58 0.1 0.1 
+			}										
+		}
+	]
+}
+DEF	thanh_ngang_tren2 Transform {
+	translation	0 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				texture ImageTexture {
+    				  url "Images/go.jpg"
+    				 }
+			}
+			geometry Box {
+				size 58 0.1 0.1 
+			}
+		}
+	]
+}
+DEF	thanh_ngang_duoi Transform {
+	translation	0 -2 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+				texture ImageTexture {
+    				  url "Images/go.jpg"
+    				 }
+			}
+			geometry Box {
+				size 58 0.2 0.1 
+			}
+		}
+	]
+}
+
+

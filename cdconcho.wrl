@@ -1,0 +1,41 @@
+#VRML V2.0 utf8
+
+PROTO ConCho[
+	field SFTime nguoiSpeed 10,
+]
+{
+	DEF	chochay Transform {
+		scale 1 1 1
+		rotation 1 1 1 -2
+		children [
+			Inline {url "concho.wrl"}
+			
+		
+		  
+		    	]
+	}
+
+
+			DEF	tgian TimeSensor {
+				cycleInterval IS nguoiSpeed
+				loop TRUE
+			}
+
+			DEF	huongdi PositionInterpolator {
+				key	[
+					0.0,0.2,0.4,0.6,0.8,
+				]
+				keyValue [
+					1 0 0, 2 0 0, 3 0 0, 5 0 0, 6.1 0 0
+
+				]
+			}
+			ROUTE tgian.fraction_changed  TO huongdi.set_fraction
+			ROUTE huongdi.value_changed	TO chochay.set_translation
+}	
+
+Transform {
+	children [
+		ConCho {}
+	]
+}

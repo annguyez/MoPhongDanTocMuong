@@ -1,0 +1,533 @@
+#VRML V2.0 utf8
+
+DEF	chauhoa Transform {	
+	translation	0 0 0
+	children [
+		DEF	de Transform {
+			children [
+				DEF	de1 Transform {
+					translation	0 0 0
+					children	[
+						Shape {
+							geometry Box {
+								size 2 .2 2
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+					
+					
+						}
+					]
+				}
+				DEF	de2	Transform {
+					translation	0 .2 0
+					children [
+						Shape {
+							geometry Box {
+								size 1.5 .2 1.5
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+						}	
+					]
+				}
+
+				DEF	tru Transform {
+					translation	0 1 0
+					children [
+						Shape {
+							geometry Box {
+								size 1.2 2 1.2
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							} 
+						}
+					]
+				}
+
+				DEF	de3	Transform {
+					translation	0 2 0
+					children [
+						Shape {
+							geometry Box {
+								size 1.4 .1 1.4
+							}
+
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+						}
+					]
+				}
+
+				DEF	de4	Transform {
+					translation	0 2.2 0
+					children [
+						Shape {
+							geometry Box {
+								size 1.5 .3 1.5
+							}
+
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+						}
+					]
+				}
+
+				DEF	caidia1 Transform {
+					translation	0 2.4 0
+					children [
+						Shape {
+							geometry Cylinder{
+								radius 1
+								height	.1
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+
+						}
+					]
+					
+				}
+
+
+				DEF	caidia2 Transform {
+					translation	0 2.6 0
+					children [
+						Shape {
+							geometry Cylinder{
+								radius 1.3
+								height	.3
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+
+						}
+					]
+					
+				}
+
+
+				DEF	caidia3 Transform {
+					translation	0 2.6 0
+					scale 1 .1 1
+					children [
+						Shape {
+							geometry Sphere	{
+								radius 1.4
+							}
+
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+
+						}
+					]
+				}
+
+				DEF	chau Transform {
+					translation	0 1.5 0
+					children [
+						Shape {
+							geometry Extrusion {
+								crossSection [.5 .86, .707 .707, .86 .5, 1 0, .86 .5, 1 0,
+									.86 -.5, .707  -.707, .5 -.86, 0 -1,
+									-.5 -.86, -.707 -.707, -.86 -.5, -1 0, -.86 .5, -.707 .707, 
+									-.5 .86,0 1, .5 .86 ]
+								spine [		0 1 0, 0 1.3 0, 0 1.35 0,
+									0 1.4 0,
+									0 1.45 0,0 1.5 0,
+									0 1.55 0,0 1.6 0,0 1.65 0,
+									0 1.7 0,0 1.75 0,0 1.8 0,
+									0 1.85 0,0 1.9 0,0 1.95 0, 0 1.97 0
+									0 2 0, 0 2.4 0, 0 2.6 0, 0 2.3 0]
+								scale [ .6 .6, .6 .6, .7 .7,
+									.6 .6,
+									.62 .62,.75 .75,
+									.76 .76,.78 .78,.8 .8,
+									.82 .82 ,.84 .84,
+									.87 .87,1.05 1.05,
+									1.1 1.1,1.15 1.15,
+									1.18 1.18, 1.2 1.2, 1.5 1.5, 1.8 1.8, 1.5 1.5]
+								solid TRUE
+
+								endCap TRUE
+								beginCap TRUE
+							}
+
+							appearance Appearance {
+								texture	ImageTexture {
+									url	"images\mauson1.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+						}
+					]
+				}
+				DEF	dat Transform {
+					scale 1 .15 1
+					translation 0 4 0
+					children	[
+						Shape {
+							geometry Sphere	{
+								radius 1.6
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url"cay\image\Dat.png"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+						}
+					]
+				}
+
+				DEF	bonghoa Transform {
+					scale 2 2 2
+					children [
+						DEF	hoa1 Transform {
+							translation	0 2.3 0
+							children [
+								Inline {
+									url	"hoatim.wrl"
+
+								}
+							]
+						}
+
+						DEF	cumhoa1 Transform {
+							children [
+								Transform {
+									rotation 1 0 0 .5
+									translation	0 2.24 .9
+									children [
+										Inline {
+											url	"hoavang.wrl"
+
+										}
+									]
+								}
+								Transform {
+									rotation 1 0 0 .5
+									translation	.2 2.24 .9
+									children [
+										Inline {
+											url	"hoatim.wrl"
+
+										}
+									]
+								}
+
+								Transform {
+									rotation 1 0 0 .5
+									translation	.3 2.24 .8
+									children [
+										Inline {
+											url	"hoavang.wrl"
+
+										}
+									]
+								}
+
+								Transform {
+									rotation 1 0 0 .5
+									translation	.3 2.24 .9
+									children [
+										Inline {
+											url	"hoatim.wrl"
+
+										}
+									]
+								}
+								Transform {
+									rotation 1 0 0 .5
+									translation	.3 2.24 .9
+									children [
+										Inline {
+											url	"hoavang.wrl"
+
+										}
+									]
+								}
+								Transform {
+									rotation 1 0 0 .5
+									translation	.3 2.24 .9
+									children [
+										Inline {
+											url	"hoatim.wrl"
+
+										}
+									]
+								}
+
+								Transform {
+									rotation 1 1 0 .5
+									translation	.4 2.24 .7
+									children [
+										Inline {
+											url	"hoavang.wrl"
+
+										}
+									]
+								}
+								Transform {
+									rotation 1 1 0 .5
+									translation	.45 2.24 .8
+									children [
+										Inline {
+											url	"hoatim.wrl"
+
+										}
+									]
+								}
+							]
+						}
+
+						Transform {
+							rotation 0 1 0 -1.57
+							translation .3 0 -.1
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							rotation 0 1 0 -1.57
+							translation .3 0 -.5
+							children [
+								USE	cumhoa1
+							]
+						}
+
+
+						Transform {
+							translation 0 0 -.5
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation 0 0 -.7
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation 0 0 -.9	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation 0 0 -1.3	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+							Transform {
+							translation -.25 0 -1.5	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation .2 0 -1.2	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation .2 0 -1	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation .2 0 -.7	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation .15 0 -.5	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation .1 0 -.3	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation .2 0 -.45	
+							children [
+								USE	cumhoa1
+							]
+						}
+
+
+						Transform {
+							rotation  0 1 0 3.14
+							translation 0 0 .4
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							rotation  0 1 0 3.14
+							translation .3 0 .4
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							rotation  0 1 0 3.14
+							translation .3 0 .6
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							rotation  0 1 0 1.57
+							translation -1 0 .4
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							rotation  0 1 0 1.57
+							translation -.5 0 .4
+							children [
+								USE	cumhoa1
+							]
+						}
+						Transform {
+							rotation  0 1 0 1.57
+							translation -.5 0 .2
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation -.7 0 -.7
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation -.7 0 -1
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation -.2 0 -.7
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+							translation -.5 0 -.5
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						Transform {
+
+							translation -.3 0 -.3
+							children [
+								USE	cumhoa1
+							]
+						}
+
+						
+
+						DEF	hoa5 Transform {
+							rotation 1 0 0 -.6
+							translation	0 2.24 -.4
+							children [
+								Inline {
+									url	"hoavang.wrl"
+
+								}
+							]
+						}
+						DEF	hoa4 Transform {
+							rotation 1 0 0 -.5
+							translation	.2 2.24 -.4
+							children [
+								Inline {
+									url	"hoavang.wrl"
+
+								}
+							]
+						}
+
+					]
+				}
+				
+			]
+		}
+	]
+}

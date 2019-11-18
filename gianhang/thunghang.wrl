@@ -1,0 +1,283 @@
+#VRML V2.0 utf8
+
+
+Transform {
+translation 0 0 0
+
+children [
+	Shape {
+		appearance Appearance {texture ImageTexture {url "..\Images\go.jpg"}}
+		geometry Box {size 60 29 60}}
+		]}
+
+	  ######### 4 chân bàn
+
+	DEF	chan Transform {
+	translation 29 22 10
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {diffuseColor 0 .5 0}
+				texture ImageTexture {url "..\Images\go.jpg"}
+			}
+				geometry Cylinder {radius 1 height 23}}]}
+
+
+
+				Transform {
+				translation -58 0 0
+				children [USE chan ]}
+
+
+
+
+				Transform {
+				translation -58 0 -38
+				children [USE chan ]}
+
+
+
+				Transform {
+				translation 0 0 -38
+				children [USE chan ]}
+
+
+
+
+
+				Transform {
+				translation 0 25.5 -9
+				children [
+					Shape {
+						appearance Appearance {texture ImageTexture {url "..\Images\go.jpg"}}
+						geometry Box {size 60 1 40}}]}
+
+
+
+
+
+
+						################# hang hoa ben ngoai
+
+
+
+
+	Transform {
+	translation -25 32 20
+	scale .75 0.75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+	Transform {
+	translation -25 32 10
+	scale .75 0.75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+	Transform {
+	translation -25 32 0
+	scale .75 0.75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+		Transform {
+	translation -25 32 -10
+	scale .75 0.75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+		Transform {
+	translation -25 32 -20
+	scale .75 0.75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+
+		Transform {
+		translation 20 32 10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+		Transform {
+		translation 20 32 20
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+		Transform {
+		translation 20 32 0
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+		Transform {
+		translation 20 32 -10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+		Transform {
+		translation 20 32 -20
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+		Transform {
+		translation 20 32 -30
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+
+	Transform {
+		translation -25 32 5
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+	
+
+
+	Transform {
+		translation -10 18 20
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+	Transform {
+		translation -10 18 10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+	Transform {
+		translation -10 18 0
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+	Transform {
+		translation -10 18 -10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+	Transform {
+		translation -10 18 -20
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+	Transform {
+		translation -10 18 -30
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+
+		Transform {
+		translation 10 32 -20
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+		Transform {
+		translation 10 32 -10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+	Transform {
+		translation 10 32 0
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+		Transform {
+		translation 10 32 10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+		Transform {
+		translation 10 32 20
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\cam.wrl"}]}
+
+
+
+
+	Transform {
+		translation -20 32 -10
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+
+	Transform {
+		translation -20 32 0
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+		Transform {
+		translation -20 32 10
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+
+	Transform {
+		translation -20 32 -20
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+	Transform {
+		translation -10 32 -20
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+	Transform {
+		translation -10 32 -10
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+	Transform {
+		translation -10 32 0
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+	Transform {
+		translation -10 32 10
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+	Transform {
+		translation 0 32 -20
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+	Transform {
+		translation 0 32 -10
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+	Transform {
+		translation 0 32 0
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+	Transform {
+		translation 0 32 10
+	
+	children [Inline {url "hanghoa\cachua.wrl"}]}
+
+	Transform {
+		translation 13 30 0
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+
+	Transform {
+		translation 13 30 10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+	Transform {
+		translation 13 30 -10
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+
+	Transform {
+		translation 13 30 -20
+	scale .75 .75 .75
+	children [Inline {url "hanghoa\duahau.wrl"}]}
+
+
+
+
+
+
+
+

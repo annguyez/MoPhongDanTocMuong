@@ -1,0 +1,34 @@
+#VRML V2.0 utf8
+
+Transform {scale .4 .4 .4 rotation 0 1 0 1.7  translation -25 -3 -13 children [Inline {url "gianhang/nguoinemcon.wrl"}]}
+
+Transform {scale 1 1 1  rotation 0 1 0 1 translation -25 -3 -13 children [Inline {url "gianhang/quacon.wrl"}]}
+
+Transform {scale .4 .4 .4 rotation 0 1 0 -1.7  translation -6 -3 -13 children [Inline {url "gianhang/danongnemcon.wrl"}]}
+
+Transform {scale 1.2 1.2 1.2 rotation 0 1 0 -1.7 translation -15 0.3 -13 children [Inline {url "vong.wrl"}]}
+
+
+Transform {scale .4 .4 .4 rotation 0 1 0 1.7  translation -25 -3 -16 children [Inline {url "gianhang/nguoinemcon.wrl"}]}
+
+Transform {scale 1 1 1 rotation 0 1 0 1 translation -25 -3 -16 children [Inline {url "gianhang/quacon1.wrl"}]}
+
+Transform {scale .4 .4 .4 rotation 0 1 0 -1.7  translation -6 -3 -16 children [Inline {url "gianhang/danong.wrl"}]}
+
+
+
+Transform {scale .4 .4 .4 rotation 0 1 0 1.7  translation -25 -3 -19 children [Inline {url "gianhang/nguoinemcon.wrl"}]}
+
+Transform {scale 1 1 1 rotation 0 1 0 1 translation -25 -3 -19 children [Inline {url "gianhang/quacon.wrl"}]}
+
+Transform {scale .4 .4 .4 rotation 0 1 0 -1.7  translation -6 -3 -19 children [Inline {url "gianhang/danongnemcon.wrl"}]}
+
+
+
+Transform {scale .4 .4 .4 rotation 0 1 0 1.7  translation -25 -3 -22 children [Inline {url "gianhang/nguoinemcon.wrl"}]}
+
+Transform {scale 1 1 1 rotation 0 1 0 1 translation -25 -3 -22 children [Inline {url "gianhang/quacon1.wrl"}]}
+
+Transform {scale .4 .4 .4 rotation 0 1 0 -1.7  translation -6 -3 -22 children [Inline {url "gianhang/danongnemcon.wrl"}]}
+
+Transform {scale .3 .3 .3 rotation 0 1 0 -1.7  translation -23 -3.2 11.5 children [Inline {url "gianhang/danongnemcon.wrl"}]}

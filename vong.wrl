@@ -1,0 +1,160 @@
+#VRML V2.0 utf8
+
+DEF	vòng Transform {
+	translation	0 -3 0
+	children [
+		DEF	goc_cot Transform {
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .949 .149 .00784
+							specularColor .19 .03 .03
+							ambientIntensity .345
+							shininess .08
+						}
+						
+					}
+					geometry Cylinder {
+						height 3
+						radius 0.15
+					}
+					
+				}
+			]
+		}
+		DEF	truc_cot Transform {
+			translation	0 1.5 0
+			children [
+				Shape {
+						appearance Appearance {
+						material Material {
+							diffuseColor .79 .25 0
+							specularColor .63 .19 .03
+							ambientIntensity .0867
+							shininess .55
+						}
+						
+
+					}
+					geometry Cylinder {
+						height 3
+						radius 0.1
+					}
+				}
+			]
+		}
+		DEF	truc_cot1 Transform	{
+			translation	0 3.5 0
+			children [
+				Shape  {
+						appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+							specularColor .87 .25 .25
+							ambientIntensity .439
+							shininess 1
+						}
+						
+					}
+					geometry Cylinder {
+						height 2 
+						radius 0.05
+					}
+				}
+			]
+		}
+		DEF	ngon_co Transform {
+			translation	0 5 0
+			children [
+				Shape {
+						appearance Appearance {
+						material Material {
+							diffuseColor .902 .149 .00784
+							specularColor .19 .03 .03
+							ambientIntensity .345
+							shininess .153
+						}
+						
+
+					}
+						geometry Cylinder {
+						height 1.5 
+						radius 0.027
+					}	
+				}
+			]
+		}
+#		DEF	la_co Transform	{
+#			translation	1 5 0 
+#			children [
+#				Shape {
+#					appearance Appearance {
+#						material Material {
+#							diffuseColor .88 .15 .01
+#							specularColor .19 .03 .03
+#							ambientIntensity .0833
+#							shininess .08
+#						}
+#						texture	ImageTexture {
+#					url	"Images/ngoisao.jpg"
+#				}
+#					}
+#					geometry	Box	{
+#						size 2 1.5 0.01
+#					}
+#				}
+#			]
+#		}							
+
+		DEF	vòng Transform {
+			translation	0 6.72 0 
+			rotation 1 0 0 1.6
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+							specularColor .87 .25 .25
+							ambientIntensity .471
+							shininess 1
+						}
+					}
+				
+					geometry Extrusion {
+						crossSection [
+							1.00	0.00
+							0.92	0.38
+							0.71	0.71
+							0.38	0.92
+							0.00	1.00
+							-0.38	0.92
+							-0.71	0.71
+							-0.92	0.38
+							-1.00	0.00
+							-0.92	-0.38
+							-0.71	-0.71
+							-0.38	-0.92
+							0.00	-1.00
+							0.38	-0.92
+							0.71	-0.71
+							0.92	-0.39
+							1.00	0.00
+						]
+						spine	[0 0 0,0 0.1 0]
+    					scale	[1 1,
+							1 1]
+
+						creaseAngle	2
+    					beginCap  FALSE
+    					endCap    FALSE
+    					solid     FALSE
+					}
+				}
+			]
+
+		}
+
+		
+	]
+}

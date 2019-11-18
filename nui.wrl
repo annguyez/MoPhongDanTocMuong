@@ -1,0 +1,56 @@
+#VRML V2.0 utf8
+
+DEF	ngonnui Transform {
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .318 .506 .259
+					specularColor .46 .46 .46
+					ambientIntensity .0933
+					shininess .51
+				}
+				texture	ImageTexture {
+					url	"Images/nui.jpg"
+				}
+				
+			}
+
+			geometry Extrusion {
+				crossSection [
+					1  0,
+				    .71 -.71,
+					0 -1,
+				    -.71 -.71,
+					-1  0,
+				    -.71  .71,														 
+					0  1, 
+				    .71  .71 ,
+				    1 0
+				]
+				spine	[0 0 0,0 1 0,0 4 0,0 5 0,0 5.5 0,0 6 0]
+    			scale	[ 5 4, 3 3, 0.5 1, 0.3 0.5, 0.1 0 ,0 0]
+				
+				#	orientation	[0 1 0 0, 0 1 0 0.1, 0 1 0 0.2, 0 1 0 0.3 ]
+			
+				creaseAngle	1
+    			beginCap  TRUE
+    			endCap    TRUE
+    			solid     FALSE
+			}
+		}
+	]
+
+
+}
+Transform {
+	scale 2 2 1
+		translation	4 0 -1
+		children [USE ngonnui ]
+	}
+
+	Transform {
+		translation	-4 0 -1
+		children [USE ngonnui ]
+	}
+

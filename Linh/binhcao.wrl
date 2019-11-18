@@ -1,0 +1,100 @@
+#VRML V2.0 utf8
+
+DEF binh Transform {
+	children [
+			Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .02 .42 .55
+					specularColor .22 .62 .71
+					ambientIntensity .0233
+					shininess .02
+				}
+			}
+			geometry Extrusion {
+				crossSection [
+				 1	0
+				0.98	0.20
+				0.92	0.38
+				0.83	0.56
+				0.71	0.71
+				0.56	0.83
+				0.38	0.92
+				0.20	0.98
+				0.00	1.00
+				-0.20	0.98
+				-0.38	0.92
+				-0.56	0.83
+				-0.71	0.71
+				-0.83	0.56
+				-0.92	0.38
+				-0.98	0.20
+				-1.00	0.00
+				-0.98	-0.20
+				-0.92	-0.38
+				-0.83	-0.56
+				-0.71	-0.71
+				-0.56	-0.83
+				-0.38	-0.92
+				-0.20	-0.98
+				0.00	-1.00
+				0.20	-0.98
+				0.38	-0.92
+				0.56	-0.83
+				0.71	-0.71
+				0.83	-0.56
+				0.92	-0.38
+				0.98	-0.20
+				1 0
+
+				]
+				spine [0 .0 0,   0 1 0  , 0 1.1 0  , 0 1.15 0  , 0 1.2 0 , 0 1.25 0, 0 1.3 0 , 0 1.45 0 , 0 1.5 0 0 1.55 0 ,0 1.55 0 , 0 1.56 0 ]
+				scale [.35 .35 , .6 .6 , .58 .58 ,		.54 .54 ,.48 .48,	 .4 .4,  .3 .3 ,	.3 .3,		.35 .35 ,	.36 .36, .39 .39 , .39 .39]
+				orientation	[0 0 1 0, 0 0 1 0, 0 0 1 0, 0 0 1 0 ]
+				creaseAngle	1
+    			beginCap  TRUE
+    			endCap    FALSE
+    			solid     FALSE
+
+			}
+		}
+
+	]
+}
+
+DEF	vong1 Transform {
+	translation	-.5 1.15 0 
+	scale .3 .3 .3
+	children [
+		Inline {
+		url		["vong.wrl"]
+		}
+	]
+}
+
+DEF	vong2 Transform {
+	translation	0 1.15 .5
+	rotation 0 1 0 1.57
+	scale .3 .3 .3
+	children [
+		Inline {
+		url		["vong.wrl"]
+		}
+	]
+}
+
+DEF	vong3 Transform	{
+	translation	0 0 0 
+	rotation 0 1 0 3.14
+	children [
+	USE	vong1
+	]
+}
+
+DEF	vong4 Transform	{
+	translation	0 0 0 
+	rotation 0 1 0 3.14
+	children [
+	USE	vong2
+	]
+}
